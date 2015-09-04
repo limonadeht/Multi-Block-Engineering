@@ -1,8 +1,0 @@
-sourceSets.main {
-    java.srcDirs project.projectDir.name
-    resources.srcDirs project.projectDir.name
-}
- 
-tasks.withType(Jar) {compileJava.options.encoding = 'UTF-8'}
-
-version = "1.0"

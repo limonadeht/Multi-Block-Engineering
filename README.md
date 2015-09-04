@@ -1,3 +1,4 @@
 # Multi-Block-Engineering
-minecraft mod
+MinecraftのMod Projectだゾ
+自由に見ていって、どうぞ。
 README

@@ -4,6 +4,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import lycheisuemon.multiengineering.item.MultiEngineeringItems;
 import net.minecraft.creativetab.CreativeTabs;
 
 @Mod(modid = MultiBlockEngineering.MOD_ID, version = MultiBlockEngineering.VERSION, useMetadata = true)
@@ -16,12 +17,12 @@ public class MultiBlockEngineering
 	public static final String VERSION = "Alpha-1.0";
 
 	//CREATIVETABS
-	public static final CreativeTabs tabAdvTorch = new MultiBlockEngineeringTab("MultiBlockEngineering");
+	public static final CreativeTabs tabMultiEngineering = new MultiBlockEngineeringTab("MultiBlockEngineering");
 
 	@EventHandler
     public void preInit( FMLPreInitializationEvent e )
     {
-
+		MultiEngineeringItems.registerMultiEngineeringItems();
     }
 
 	@EventHandler

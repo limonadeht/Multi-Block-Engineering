@@ -4,6 +4,7 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import lycheisuemon.multiengineering.block.MultiEngineeringBlocks;
 import lycheisuemon.multiengineering.item.MultiEngineeringItems;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -23,6 +24,7 @@ public class MultiBlockEngineering
     public void preInit( FMLPreInitializationEvent e )
     {
 		MultiEngineeringItems.registerMultiEngineeringItems();
+		MultiEngineeringBlocks.registerMultiEngineeringBlocks();
     }
 
 	@EventHandler

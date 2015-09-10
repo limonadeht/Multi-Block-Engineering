@@ -4,7 +4,9 @@ import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import lycheisuemon.multiengineering.block.MultiEngineeringBlocks;
+import lycheisuemon.multiengineering.gui.GuiHandler;
 import lycheisuemon.multiengineering.item.MultiEngineeringItems;
 import net.minecraft.creativetab.CreativeTabs;
 
@@ -13,7 +15,7 @@ public class MultiBlockEngineering
 {
 	@Mod.Instance("MultiBlockEngineering")
 	//INSTANCE
-	public static MultiBlockEngineering instance;
+	public static MultiBlockEngineering Instance;
 	public static final String MOD_ID = "MultiBlockEngineering";
 	public static final String VERSION = "Alpha-1.0";
 
@@ -30,6 +32,6 @@ public class MultiBlockEngineering
 	@EventHandler
     public void Init( FMLInitializationEvent e )
     {
-
+		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
     }
 }

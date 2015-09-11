@@ -27,11 +27,12 @@ public class MultiBlockEngineering
     {
 		MultiEngineeringItems.registerMultiEngineeringItems();
 		MultiEngineeringBlocks.registerMultiEngineeringBlocks();
+
+		NetworkRegistry.INSTANCE.registerGuiHandler(MultiBlockEngineering.Instance, new GuiHandler());
     }
 
 	@EventHandler
     public void Init( FMLInitializationEvent e )
     {
-		NetworkRegistry.INSTANCE.registerGuiHandler(this, new GuiHandler());
     }
 }

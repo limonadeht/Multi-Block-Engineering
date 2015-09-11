@@ -8,7 +8,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class GuiBasicGenerator extends GuiContainer
 {
-	public static final ResourceLocation bground = new ResourceLocation("multiengineering:basicgenerator_gui");
+	public static final ResourceLocation bground = new ResourceLocation("multiengineering", "textures/gui/basicgenerator_gui.png");
 
 	public TileEntityBasicGenerator basicGenerator;
 

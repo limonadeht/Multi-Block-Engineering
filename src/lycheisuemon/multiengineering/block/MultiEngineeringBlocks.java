@@ -11,6 +11,7 @@ public class MultiEngineeringBlocks
 	public static Block BlockSampleDuct;
 	public static Block BlockBasicGeneratorIdle;
 	public static Block BlockBasicGeneratorActive;
+	public static Block BlockLighting;
 
 	public static void registerMultiEngineeringBlocks()
 	{
@@ -22,6 +23,9 @@ public class MultiEngineeringBlocks
 
 		BlockBasicGeneratorActive = new BasicGenerator(true).setBlockName("Basic Generator Active").setLightLevel(0.625F);
 		GameRegistry.registerBlock(BlockBasicGeneratorActive, "BlockBasicGeneratorActive");
+
+		BlockLighting = new BlockLighting(Material.wood).setBlockName("Light").setCreativeTab(MultiBlockEngineering.tabMultiEngineering);
+		GameRegistry.registerBlock(BlockLighting, "BlockLighting");
 
 		//TileEntityのregisterしちゃう？しちゃう！
 		GameRegistry.registerTileEntity(TileEntityBasicGenerator.class, "Basic Generator");
